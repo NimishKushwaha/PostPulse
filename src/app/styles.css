@@ -1,0 +1,33 @@
+/* src/app/styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Recommendations section */
+  .recommendations-container {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.5s ease-in-out; /* Fade in/out transition */
+  }
+  
+  .fall-animation {
+    animation: fall 0.5s ease forwards; /* Trigger fall animation */
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-30px); /* Start 30px above */
+      opacity: 0; /* Start hidden */
+    }
+    100% {
+      transform: translateY(0); /* End at original position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
